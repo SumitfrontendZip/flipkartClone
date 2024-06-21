@@ -1,0 +1,16 @@
+.productDescription > img{
+    width: 20%;
+    /* mix-blend-mode:multiply; */
+}
+.productDescription{
+    display: flex;
+    justify-content: space-evenly;
+}
+.offers > span > img{
+    width: 20px;
+    margin-right: 10px;
+}
+.offers > span{
+    display: flex;
+    align-items: center;
+}

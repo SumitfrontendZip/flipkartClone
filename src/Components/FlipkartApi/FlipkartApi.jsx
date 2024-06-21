@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import { ProductCard } from "../ProductCard/ProductCard";
-import './Filpkart.css'
-const AmazonSellerProducts = () => {
+import './Filpkart.css';
+
+const FilpkartApi = () => {
     const [products, setProducts] = useState([]);
-    const [error, setError] = useState(null);
 
     useEffect(() => {
         const fetchProducts = async () => {
@@ -13,10 +14,9 @@ const AmazonSellerProducts = () => {
                     throw new Error('Network response was not ok');
                 }
                 const data = await response.json();
-                console.log(data);
                 setProducts(data);
             } catch (error) {
-                setError(error.message);
+                console.log('Error fetching products:', error);
             }
         };
 
@@ -25,20 +25,21 @@ const AmazonSellerProducts = () => {
 
     return (
         <div className="product-cards">
-            {
-                products.map((card) => <ProductCard
-                    key={card.id}
-                    id={card.id}
-                    image={card.image}
-                    title={card.title}
-                    rating={card.rating.rate}
-                    reviews={card.rating.count}
-                    price={card.price}
-                />)
-            }
+            {products.map((product) => (
+                <Link key={product.id} to={`/products/${product.id}`}>
+                    <ProductCard
+                        id={product.id}
+                        image={product.image}
+                        title={product.title}
+                        rating={product.rating.rate}
+                        reviews={product.rating.count}
+                        price={product.price}
+                        category={product.category}
+                    />
+                </Link>
+            ))}
         </div>
     );
 };
 
-export default AmazonSellerProducts;
-
+export default FilpkartApi;
