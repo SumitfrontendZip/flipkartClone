@@ -1,41 +1,58 @@
 .productCard>img {
     width: 200px;
+    height: 200px;
 }
 
 .productCard {
+    border-radius: 10px;
+    height: 400px;
+    width: 300px;
+    margin: 40px 20px;
     cursor: pointer;
-    padding: 0px 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-bottom: 20px;
-    border-bottom: 1px solid rgb(224, 224, 224);
-
 }
-.flipkartIcon{
+.productCard:hover{
+    box-shadow: 0 0 5px rgba(0,0,0,50)
+}
+
+.flipkartIcon {
     margin: 10px 0px;
     width: 100px !important;
+    height: 30px !important;
 }
-.productCard > h2{
+
+.productCard>h2 {
     color: rgb(67, 57, 57);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
 }
-.price{
+
+.price {
     font-weight: 700;
     font-size: 18px;
     margin-right: 5px;
 }
-.discount{
+
+.discount {
     font-size: 18px;
     margin-right: 5px;
     color: rgb(140, 140, 140);
     text-decoration: line-through;
 }
-.off{
+
+.off {
     color: green;
     font-weight: 700;
 }
-.BuyNow{
+
+.BuyNow {
     background: orange;
     border: none;
     padding: 5px 20px;

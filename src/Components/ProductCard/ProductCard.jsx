@@ -1,15 +1,14 @@
 import { Link } from 'react-router-dom'
 import './ProductCard.css'
 import flipkartIcon from './prime11.png'
-export const ProductCard = ({ image, title, rating, reviews, price, discountPrice , id }) => {
- 
+export const ProductCard = ({ image, title, rating, reviews, price, id }) => {
+
     const handleProductData = () => {
         const productData = {
             title,
             rating,
             reviews,
             price,
-            discountPrice,
             id,
             image
         };
@@ -28,8 +27,6 @@ export const ProductCard = ({ image, title, rating, reviews, price, discountPric
                 <img src={flipkartIcon} alt="" className='flipkartIcon' />
                 <div className="priceDetail">
                     <span className="price">₹{price}</span>
-                    <span className="discount">₹{discountPrice}</span>
-                    <span className="off">{Math.floor(((discountPrice - price) / discountPrice) * 100)}%</span>
                 </div>
                 <button className='BuyNow'>Buy Now</button>
             </div>

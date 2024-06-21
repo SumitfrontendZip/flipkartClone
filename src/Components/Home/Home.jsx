@@ -1,7 +1,7 @@
 import { Category } from "../Category/Category"
+import AmazonSellerProducts from "../FlipkartApi/FlipkartApi"
 import { Navbar } from "../Navbar/Navbar"
-import { ProductCards } from "../ProductCards/ProductCards"
-import { ProductSlider } from "../ProductSlider/ProductSlider"
+ import { ProductSlider } from "../ProductSlider/ProductSlider"
 import './Home.css'
 export const Home = () => {
     return (
@@ -9,7 +9,7 @@ export const Home = () => {
             <Navbar />
             <Category/>
             <ProductSlider/>
-            <ProductCards/>
+            <AmazonSellerProducts/>
         </div>
     )
 }

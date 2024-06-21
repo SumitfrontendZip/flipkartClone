@@ -2,6 +2,8 @@
 import './App.css'
 import { Home } from './Components/Home/Home'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import NotPageFound from './Components/NotPageFound/NotPageFound';
+import AmazonSellerProducts from './Components/FlipkartApi/FlipkartApi';
 
 function App() {
   const router = createBrowserRouter([
@@ -12,6 +14,9 @@ function App() {
           <Home />
         </>
       )
+    },{
+      path:'*',
+      element:<NotPageFound/>
     }
 
   ]);
@@ -19,7 +24,7 @@ function App() {
   return (
     <>
       <RouterProvider router={router} />
-
+    
     </>
   )
 }
