@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import './ProductCard.css'
 import flipkartIcon from './prime11.png'
+import starIcon from './star.png'
 export const ProductCard = ({ image, title, rating, reviews, price, id }) => {
 
     const handleProductData = () => {
@@ -21,7 +22,10 @@ export const ProductCard = ({ image, title, rating, reviews, price, id }) => {
                 <img src={image} alt="" />
                 <h2>{title}</h2>
                 <div className="rating">
-                    <span>{rating}</span>
+                    <span>
+                        <img src={starIcon} alt="" />
+                        {rating}
+                    </span>
                     <span>({reviews})</span>
                 </div>
                 <img src={flipkartIcon} alt="" className='flipkartIcon' />

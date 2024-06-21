@@ -5,7 +5,7 @@
 
 .productCard {
     border-radius: 10px;
-    height: 400px;
+    height: 450px;
     width: 300px;
     margin: 40px 20px;
     cursor: pointer;
@@ -27,6 +27,8 @@
 }
 
 .productCard>h2 {
+    margin: 4px;
+    text-align: center;
     color: rgb(67, 57, 57);
     white-space: nowrap;
     overflow: hidden;
@@ -40,12 +42,7 @@
     margin-right: 5px;
 }
 
-.discount {
-    font-size: 18px;
-    margin-right: 5px;
-    color: rgb(140, 140, 140);
-    text-decoration: line-through;
-}
+ 
 
 .off {
     color: green;
@@ -58,4 +55,22 @@
     padding: 5px 20px;
     border-radius: 5px;
     margin-top: 8px;
+}
+.rating > span:first-child{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: green;
+    width: 50px;
+    color: white;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+.rating >span:first-child> img{
+    width: 15px;
+}
+.rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

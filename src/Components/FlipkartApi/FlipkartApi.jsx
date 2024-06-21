@@ -25,18 +25,18 @@ const AmazonSellerProducts = () => {
 
     return (
         <div className="product-cards">
-        {
-            products.map((card) => <ProductCard
-                key={card.id}
-                id={card.id}
-                image={card.image}
-                title={card.title}
-                rating={card.rating.rate}
-                reviews={card.rating.count}
-                price={card.price}
-            />)
-        }
-    </div>
+            {
+                products.map((card) => <ProductCard
+                    key={card.id}
+                    id={card.id}
+                    image={card.image}
+                    title={card.title}
+                    rating={card.rating.rate}
+                    reviews={card.rating.count}
+                    price={card.price}
+                />)
+            }
+        </div>
     );
 };
 
