@@ -5,7 +5,7 @@ import { Navbar } from '../Navbar/Navbar';
 import Zoom from 'react-img-zoom'
 import './ProductDescription.css'
 const ProductDescription = () => {
-    const {id} = useParams();
+    const { id } = useParams();
     const [product, setProduct] = useState(null);
 
     useEffect(() => {
@@ -28,7 +28,10 @@ const ProductDescription = () => {
     }, [id]);
 
     if (!product) {
-        return <p>Loading...</p>;
+        return <>
+            <Navbar />
+            <span className='loaderCenter'><div className='loader'> </div></span>
+        </>
     }
 
     return (
