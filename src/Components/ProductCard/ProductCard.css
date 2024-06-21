@@ -1,0 +1,44 @@
+.productCard>img {
+    width: 200px;
+}
+
+.productCard {
+    cursor: pointer;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(224, 224, 224);
+
+}
+.flipkartIcon{
+    margin: 10px 0px;
+    width: 100px !important;
+}
+.productCard > h2{
+    color: rgb(67, 57, 57);
+}
+.price{
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 5px;
+}
+.discount{
+    font-size: 18px;
+    margin-right: 5px;
+    color: rgb(140, 140, 140);
+    text-decoration: line-through;
+}
+.off{
+    color: green;
+    font-weight: 700;
+}
+.BuyNow{
+    background: orange;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-top: 8px;
+}
