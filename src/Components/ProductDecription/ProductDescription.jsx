@@ -35,18 +35,25 @@ const ProductDescription = () => {
         <>
             <Navbar />
             <div className='productDescription'>
-                <Zoom
-                    img={product.image}
-                    zoomScale={3}
-                    width={600}
-                    height={600}
-                    style={{ mixBlendMode: 'multiply' }}
-                />
+                <div className="imageSection">
+                    <Zoom
+                        img={product.image}
+                        zoomScale={3}
+                        width={600}
+                        height={600}
+                        style={{ mixBlendMode: 'multiply' }}
+                    />
+                    <div className="buttons">
+                        <button><img src="" alt="" /><span>ADD TO CART</span></button>
+                        <button><img src="" alt="" /><span>BUY NOW</span></button>
+                    </div>
+                </div>
                 <section>
                     <h2>{product.title}</h2>
                     <div className="rating">
                         <span>Rating: {product.rating.rate} ({product.rating.count} reviews)</span>
                     </div>
+                    <h4>Special Price</h4>
                     <span className="price">Price: ₹{product.price}</span>
                     <h2>Available Offers</h2>
                     <div className="offers">
@@ -59,11 +66,15 @@ const ProductDescription = () => {
                         <span>Delivery</span>
                         <input type="number" placeholder="Enter Pincode" />
                     </div>
-                    <div className='Color'>
-                        <span>Color</span>
-                        <span>Red</span><span>Blue</span><span>Green</span><span>Black</span>
+                    <div className='color'>
+                        <span>Color :</span>
+                        <div style={{ backgroundColor: 'black' }}></div>
+                        <div style={{ backgroundColor: 'Green' }}></div>
+                        <div style={{ backgroundColor: 'Grey' }}></div>
+                        <div style={{ backgroundColor: 'pink' }}></div>
                     </div>
-                    <span className="description">Description: {product.description}</span>
+
+                    <p className="description"><strong>Description:</strong> {product.description}</p>
                 </section>
             </div>
         </>

@@ -1,5 +1,5 @@
 .productDescription > img{
-    width: 20%;
+    width:210px;
     /* mix-blend-mode:multiply; */
 }
 .productDescription{
@@ -13,4 +13,75 @@
 .offers > span{
     display: flex;
     align-items: center;
+    margin: 15px 0px;
 }
+section > .rating{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+section .rating > span{
+    margin: 10px 0px;
+    padding: 10px;
+    width: 200px !important;
+}
+section > h2:first-child{
+    font-weight: 700;
+    margin: 10px 0px;
+    font-size: 1.4rem;
+}
+section >h4{
+    color: #a74444;
+}
+.imageSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+.buttons>button{
+    width:190px;
+    background: red;
+    padding: 10px 5px;
+    border-radius: 3px;
+}
+.buttons{
+    width:410px;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+ }
+ .deliveryInput > span{
+    margin-right: 30px;
+    color: rgb(126, 126, 126);
+ }
+ .deliveryInput > input{
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+ }
+ .deliveryInput{
+    margin: 20px 0px;
+ }
+ .color > div{
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background: #000;
+    cursor: pointer;
+ }
+ .color >span{
+    margin-right: 10px;
+ }
+ .color{
+    margin: 20px 0px;
+    width:250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .description{
+    width: 500px;
+ }
