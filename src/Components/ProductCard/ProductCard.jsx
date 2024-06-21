@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import './ProductCard.css'
 import flipkartIcon from './prime11.png'
 import starIcon from './star.png'
-export const ProductCard = ({ image, title, rating, reviews, price ,category , id}) => {
+export const ProductCard = ({ image, title, rating, reviews, price  }) => {
  
     return (
         

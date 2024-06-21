@@ -26,7 +26,7 @@ const FilpkartApi = () => {
     return (
         <div className="product-cards">
             {products.map((product) => (
-                <Link key={product.id} to={`/products/${product.id}`}>
+                <Link key={product.id} to={`/${product.category}/${product.id}`}>
                     <ProductCard
                         id={product.id}
                         image={product.image}

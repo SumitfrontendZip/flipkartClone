@@ -15,7 +15,7 @@ function App() {
         </>
       )
     },{
-      path:'/:category/:title',
+      path:'/:category/:id',
       element:<ProductDescription/>
     },
     {

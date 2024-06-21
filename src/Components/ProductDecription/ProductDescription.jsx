@@ -5,13 +5,13 @@ import { Navbar } from '../Navbar/Navbar';
 import Zoom from 'react-img-zoom'
 import './ProductDescription.css'
 const ProductDescription = () => {
-    const productId = 1;
+    const {id} = useParams();
     const [product, setProduct] = useState(null);
 
     useEffect(() => {
         const fetchProduct = async () => {
             try {
-                const response = await fetch(`https://fakestoreapi.com/products/${productId}`);
+                const response = await fetch(`https://fakestoreapi.com/products/${id}`);
                 console.log(response);
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -25,7 +25,7 @@ const ProductDescription = () => {
         };
 
         fetchProduct();
-    }, [productId]);
+    }, [id]);
 
     if (!product) {
         return <p>Loading...</p>;
