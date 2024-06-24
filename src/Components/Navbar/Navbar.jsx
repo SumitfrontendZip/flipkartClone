@@ -3,11 +3,12 @@ import customerIcon from './customer.png'
 import wishListIcon from './bag.png'
 import searchIcon from './search.png'
 import './Navbar.css'
+import { Link } from 'react-router-dom'
 export const Navbar = () => {
     return (
         <nav>
             <div className="navbar">
-                <img src={Logo} alt="" />
+                <Link to='/'><img src={Logo} alt="" /></Link>
                 <div className="SearchBar">
                     <img src={searchIcon} alt="" />
                     <input type="text" placeholder='Search for Products, Brands and More' />

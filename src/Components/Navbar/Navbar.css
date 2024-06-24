@@ -8,8 +8,9 @@
     background: #ffffff;
 }
 
-.navbar>img {
+.navbar>a>img {
     width: 100px;
+    cursor: pointer;
 }
 
 nav {
@@ -62,4 +63,33 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media screen and (max-width:1182px) {
+    .SearchBar > input{
+        width: 600px;
+    }
+}
+@media screen and (max-width:1053px) {
+    .SearchBar > input{
+        width: 400px;
+    }
+}
+@media screen and (max-width:870px) {
+    .SearchBar > input{
+        width: 300px;
+    }
+}
+@media screen and (max-width:750px) {
+    .SearchBar {
+        display: none;
+    }
+    .navbar{
+        padding: 0px 10px;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width:450px) {
+    .profileSeaction{
+        display: none;
+    }
 }
