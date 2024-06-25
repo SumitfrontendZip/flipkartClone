@@ -1,0 +1,90 @@
+.centerLogin {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    width: 50vw;
+}
+
+.centerLogin>header {
+    display: flex;
+    justify-content: baseline;
+    align-items: self-end;
+    background: #2874F0;
+    padding: 10px;
+    color: white;
+    font-weight: 700;
+    align-items: center;
+}
+
+.centerLogin>header>span:first-child {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2874F0;
+    background: white;
+    border-radius: 2px;
+    margin-right: 20px;
+}
+
+.centerLogin>section {
+    display: flex;
+    justify-content: center;
+    background: white;
+}
+
+.subSection {
+    width: 50%;
+    height: 22vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.subSection:first-child{
+    margin-left: 30px;
+}
+.subSection>input {
+    outline: none;
+    border-bottom: 1px solid rgb(214, 214, 214);
+    padding: 2px;
+    width: 70%;
+}
+
+.subSection:first-child>span {
+    font-size: 0.8rem;
+    color: rgb(174, 147, 147);
+    width: 70%;
+    margin-top: 20px;
+}
+
+.subSection:first-child>button {
+    background: #FB641B;
+    padding: 15px;
+    border-radius: 3px;
+    margin-top: 10px;
+    width: 70%;
+    color: white;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.subSection:last-child > h4{
+    color: rgb(156, 127, 127);
+    margin: 0px 0px 10px 0px;
+}
+.subSection > span > img{
+    width: 20px;
+}
+.subSection > span > span{
+     font-size: 0.8rem;
+     margin-left: 10px;
+}
+.subSection > span{
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
+ }
+ .containerLogin{
+    display: flex;
+    justify-content: center;
+ }
