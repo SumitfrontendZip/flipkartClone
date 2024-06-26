@@ -54,6 +54,12 @@ section>h4 {
     padding: 10px 5px;
     border-radius: 3px;
 }
+.buttons>a>button {
+    width: 190px;
+    background: red;
+    padding: 10px 5px;
+    border-radius: 3px;
+}
 
 .buttons {
     width: 410px;

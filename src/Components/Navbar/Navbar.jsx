@@ -14,10 +14,12 @@ export const Navbar = () => {
                     <input type="text" placeholder='Search for Products, Brands and More' />
                 </div>
                 <div className="profileSeaction">
-                    <div className="section">
-                        <img src={customerIcon} alt="" />
-                        <span>Login</span>
-                    </div>
+                    <Link to='/login'>
+                        <div className="section">
+                            <img src={customerIcon} alt="" />
+                            <span>Login</span>
+                        </div>
+                    </Link>
                     <div className="section">
                         <img src={customerIcon} alt="" />
                         <span>Cart</span>

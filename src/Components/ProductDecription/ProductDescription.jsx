@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import discountIcon from './discount.png';
 import { useEffect, useState } from 'react';
 import { Navbar } from '../Navbar/Navbar';
@@ -48,7 +48,7 @@ const ProductDescription = () => {
                     />
                     <div className="buttons">
                         <button><img src="" alt="" /><span>ADD TO CART</span></button>
-                        <button><img src="" alt="" /><span>BUY NOW</span></button>
+                        <Link to='/login'><button><img src="" alt="" /><span>BUY NOW</span></button></Link>
                     </div>
                 </div>
                 <section>

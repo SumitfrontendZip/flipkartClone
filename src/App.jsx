@@ -5,7 +5,8 @@ import NotPageFound from './Components/NotPageFound/NotPageFound';
 import ProductDescription from './Components/ProductDecription/ProductDescription';
 import Address from './Components/LoginPage/Address';
 import { Navbar } from './Components/Navbar/Navbar';
-import LoginPageContainer1 from './Components/LoginPage/LoginPageContainer1';
+import LoginPage from './Components/LoginPage/LoginPage';
+import OrderSummary from './Components/LoginPage/OrderSummary';
 
 function App() {
   const router = createBrowserRouter([
@@ -22,11 +23,15 @@ function App() {
     },
     {
       path: '/login',
-      element: <><Navbar /><div className="containerLogin"><LoginPageContainer1 /> </div> </>
+      element: <><Navbar /><div className="containerLogin"><LoginPage /> </div> </>
     },
     {
       path: '/address',
       element: <><Navbar /><div className="containerLogin"><Address /> </div> </>
+    },
+    {
+      path: '/order',
+      element: <><Navbar /><div className="containerLogin"><OrderSummary /> </div> </>
     },
     {
       path: '*',
