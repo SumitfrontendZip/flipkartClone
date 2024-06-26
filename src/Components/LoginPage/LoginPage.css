@@ -36,14 +36,16 @@
 
 .subSection {
     width: 50%;
-    height: 22vh;
+    /* height: ; */
     display: flex;
     flex-direction: column;
     padding: 20px;
 }
-.subSection:first-child{
+
+.subSection:first-child {
     margin-left: 30px;
 }
+
 .subSection>input {
     outline: none;
     border-bottom: 1px solid rgb(214, 214, 214);
@@ -68,23 +70,42 @@
     font-weight: 700;
     text-transform: capitalize;
 }
-.subSection:last-child > h4{
+
+.subSection:last-child>h4 {
     color: rgb(156, 127, 127);
     margin: 0px 0px 10px 0px;
 }
-.subSection > span > img{
+
+.subSection>span>img {
     width: 20px;
 }
-.subSection > span > span{
-     font-size: 0.8rem;
-     margin-left: 10px;
+
+.subSection>span>span {
+    font-size: 0.8rem;
+    margin-left: 10px;
 }
-.subSection > span{
+
+.subSection>span {
     display: flex;
     align-items: center;
     margin: 5px 0px;
- }
- .containerLogin{
+}
+
+.containerLogin {
     display: flex;
     justify-content: center;
- }
+    height: 32vh;
+}
+
+.otpInputContainer {
+    display: flex;
+    margin: 15px 0px;
+}
+
+.otpInputContainer>input {
+    width: 30px;
+    border: 1px solid black;
+    margin-right: 4px;
+    outline: none;
+    text-align: center;
+}
