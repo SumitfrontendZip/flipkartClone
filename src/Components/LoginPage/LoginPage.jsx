@@ -37,10 +37,12 @@ function LoginPageContainer1() {
     const onHandleSubmit = async (event) => {
         event.preventDefault();
 
-        const otp = generateOtp();
-        setGeneratedOtp(otp);
-        alert(`Your OTP is ${otp}`);
-        setShowOtp(true);
+        if(phoneNumber || email){
+            const otp = generateOtp();
+            setGeneratedOtp(otp);
+            alert(`Your OTP is ${otp}`);
+            setShowOtp(true);
+        }
     };
 
     const onOtpSubmit = (otp) => {
@@ -70,7 +72,7 @@ function LoginPageContainer1() {
                     />
                     <span>By Continuing, you agree to Flipkart's Terms of Use and Privacy Policy.</span>
                     {showOtp && (phoneNumber || email) && <OtpInput phoneNumber={phoneNumber} onOtpSubmit={onOtpSubmit} />}
-                    <Link to='/address'>{!showOtp ? <button onClick={onHandleSubmit}>CONTINUE</button> : <button onClick={handleVerifyOtp}>Submit OTP</button>}</Link>
+                    {!showOtp ? <button onClick={onHandleSubmit}>CONTINUE</button> : <Link to='/address'> <button onClick={handleVerifyOtp}>Submit OTP</button></Link>}
                 </div>
                 <div className="subSection">
                     <h4>Advantages of our secure login</h4>

@@ -36,7 +36,7 @@
 
 .subSection {
     width: 50%;
-    /* height: ; */
+ 
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -60,7 +60,17 @@
     margin-top: 20px;
 }
 
-.subSection:first-child> a>button {
+.subSection:first-child>a>button {
+    background: #FB641B;
+    padding: 15px;
+    border-radius: 3px;
+    margin-top: 10px;
+    width: 70%;
+    color: white;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.subSection:first-child>button {
     background: #FB641B;
     padding: 15px;
     border-radius: 3px;
@@ -148,4 +158,12 @@
     background: red;
     color: white;
     font-weight: 700;
+}
+.centerLogin>section > button{
+    background: #000;
+    margin: 10px 5px;
+    color: white;
+    padding: 10px 40px;
+    font-weight: 700;
+    border-radius: 10px;
 }

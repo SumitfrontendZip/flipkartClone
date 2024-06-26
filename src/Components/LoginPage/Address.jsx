@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import query from 'india-pincode-search';
+import { Link } from 'react-router-dom';
 function Address() {
     const [pincode, setPincode] = useState('')
     const [result, setResult] = useState(null);
@@ -46,7 +47,7 @@ function Address() {
             </div>
             <div className="centerTextArea">
                 <textarea name="" id="" placeholder='Address'></textarea>
-                <button onClick={() => handleSearch()} className='btnAddress'>Submit</button>
+               <Link to='/order'> <button onClick={() => handleSearch()} className='btnAddress'>Submit</button></Link>
             </div>
         </div>
     )
