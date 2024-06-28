@@ -2,8 +2,14 @@
     display: flex;
     margin-top: 30px;
     flex-direction: column;
-    width: 50vw;
+    width: 800px;
 }
+
+@media screen and (max-width:821px) {
+    .centerLogin{
+        width:90%;
+    }
+} 
 
 .centerLogin>header {
     display: flex;
@@ -30,13 +36,21 @@
 
 .centerLogin>section {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     background: white;
+ 
 }
-
+@media screen  and (max-width:796px){
+    .centerLogin>section{
+        flex-wrap: wrap;
+    }
+    .subSection{
+        align-items: center;
+        width: 100% !important;
+    }
+}
 .subSection {
     width: 50%;
- 
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -132,7 +146,13 @@
     margin: 10px;
     padding: 10px 5px;
 }
-
+@media screen and  (max-width:471px){
+    .inputContainerAdress {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
 .centerTextArea {
     background: rgb(224, 255, 225);
     height: 35vh;
@@ -153,11 +173,12 @@
 .btnAddress {
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 50%;
+    width: 200px;
     padding: 10px;
     background: red;
     color: white;
     font-weight: 700;
+    border-radius: 5px;
 }
 .centerLogin>section > button{
     background: #000;
@@ -166,4 +187,7 @@
     padding: 10px 40px;
     font-weight: 700;
     border-radius: 10px;
+}
+.containerLogin > .centerLogin > section{
+    justify-content: center;
 }

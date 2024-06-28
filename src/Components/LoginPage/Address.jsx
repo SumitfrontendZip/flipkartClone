@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import query from 'india-pincode-search';
 import { Link } from 'react-router-dom';
 function Address() {
@@ -13,8 +13,7 @@ function Address() {
                 setResult(results[0]);
                 setError(null);
             } else {
-                setResult(null);
-                setError('No results found for the given pincode.');
+                setResult(null);  
             }
         } catch (error) {
             setResult(null);
@@ -45,9 +44,10 @@ function Address() {
                 <input type="text" placeholder='Landmark (Optional)' />
                 <input type="number" placeholder='Alternate Phone (Optional)' />
             </div>
+            <p>{error}</p>
             <div className="centerTextArea">
                 <textarea name="" id="" placeholder='Address'></textarea>
-               <Link to='/order'> <button onClick={() => handleSearch()} className='btnAddress'>Submit</button></Link>
+                <Link to='/order'> <button onClick={() => handleSearch()} className='btnAddress'>Submit</button></Link>
             </div>
         </div>
     )

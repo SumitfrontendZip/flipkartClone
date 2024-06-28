@@ -36,6 +36,7 @@ section>h2:first-child {
     font-weight: 700;
     margin: 10px 0px;
     font-size: 1.4rem;
+
 }
 
 section>h4 {
@@ -54,6 +55,7 @@ section>h4 {
     padding: 10px 5px;
     border-radius: 3px;
 }
+
 .buttons>a>button {
     width: 190px;
     background: red;
@@ -156,10 +158,25 @@ section>h4 {
     .imageSection>div>div {
         width: 100% !important;
     }
-    .buttons{
+
+    .buttons {
         margin: 0px;
     }
+
+    section>h2 {
+        width: 400px;
+        font-size: 1.2rem;
+    }
+
+    .offers>span {
+        width: 400px;
+    }
+
+    .description {
+        width: 80%;
+    }
 }
+
 @media screen and (max-width:420px) {
     .imageSection {
         width: 300px !important;
@@ -172,8 +189,17 @@ section>h4 {
     .imageSection>div>div {
         width: 100% !important;
     }
-    .buttons{
+
+    .buttons {
+        position: fixed;
+        bottom: 0px;
+        width: 90vw;
         margin: 0px;
+        margin: 0px;
+    }
+
+    .buttons>button {
+        margin: 0px 10px;
     }
 }
 
@@ -186,11 +212,11 @@ section>h4 {
     }
 
     .buttons>button {
-        width: 400px;
+        width: 40%;
         margin: 0px 10px;
     }
 
-    section {
+    .productDescription > section {
         display: flex;
         flex-direction: column;
         justify-content: center;

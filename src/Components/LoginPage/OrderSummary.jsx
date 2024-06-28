@@ -16,7 +16,7 @@ function OrderSummary() {
         <div className="centerLogin">
             <header>
                 <span>3</span>
-                <span>Order Summary</span>
+                <span>Payment</span>
             </header>
             <section>
                 <button onClick={makeCode('phonepe')}>Phone Pe</button>
